@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Gotham Pro Regular";
+  src: url(../fonts/GothamPro.woff) format(woff2);
+  font-weight: normal;
+  font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: "Gotham Pro Medium";
+    src: url(../fonts/GothamPro-Medium.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Gotham Pro Bold";
+      src: url(../fonts/GothamPro-Bold.woff) format(woff);
+      font-weight: normal;
+      font-style: normal;
+      }
+
+     @font-face {
+    font-family: 'ALS Schlange sans';
+    src: url('ALSSchlangesans-Bold.eot');
+    src: local('ALS Schlange sans Bold'), local('ALSSchlangesans-Bold'),
+        url('ALSSchlangesans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ALSSchlangesans-Bold.woff2') format('woff2'),
+        url('ALSSchlangesans-Bold.woff') format('woff'),
+        url('ALSSchlangesans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
