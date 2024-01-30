@@ -1,0 +1,235 @@
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url(../fonts/GothamPro.woff) format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url(../fonts/GothamPro-Medium.woff) format(woff);
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url(../fonts/GothamPro-Bold.woff) format(woff);
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: "ALSSchlangesans-Bold";
+  src: url(../fonts/ALSSchlangesans-Bold.woff2) format(woff2);
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* Предотвращаем горизонтальный скролл */
+}
+
+#slider-container {
+  width: 100%;
+  /* Или сколько вам нужно видеть слайдов */
+  overflow: hidden;
+  margin: 20px auto;
+  
+}
+
+#slider {
+  display: flex;
+  width: calc(100% + 15px);
+  /* Установите ширину в зависимости от количества слайдов и отступов между ними */
+  transition: transform 0.3s ease-out;
+  background: #FFF;
+}
+
+.slide {
+  width:40%; /* Устанавливаем ширину карточки */
+  margin-right: 15px; /* Пространство между карточками */
+  background-color: #ddd;
+  text-align: center;
+  height: auto;
+  flex-shrink: 0; /* Запрет уменьшения элемента */
+  border-radius: 20px;
+border: 5px solid #4C75A3;
+background: #FFF;
+
+}
+
+.slide1 {
+  width: 40%; /* Устанавливаем ширину карточки */
+  margin-right: 15px; /* Пространство между карточками */
+  background-color: #ddd;
+  text-align: center;
+  height: auto;
+  flex-shrink: 0; /* Запрет уменьшения элемента */
+  border-radius: 20px;
+border: 5px solid #4C75A3;
+background: #FFF;
+
+}
+.slide2 {
+  width: 40%; /* Устанавливаем ширину карточки */
+  margin-right: 15px; /* Пространство между карточками */
+  background-color: #ddd;
+  text-align: center;
+  height: auto;
+  flex-shrink: 0; /* Запрет уменьшения элемента */
+  border-radius: 20px;
+  border: 5px solid #e22e85;
+background: #FFF;
+
+}
+.slide3 {
+  width: 40%; /* Устанавливаем ширину карточки */
+  margin-right: 15px; /* Пространство между карточками */
+  background-color: #ddd;
+  text-align: center;
+  height: auto;
+  flex-shrink: 0; /* Запрет уменьшения элемента */
+  border-radius: 20px;
+  border: 5px solid var(--Linear, #4698e5);
+background: #FFF;
+
+}
+
+.slide4 {
+  width: 40%; /* Устанавливаем ширину карточки */
+  margin-right: 15px; /* Пространство между карточками */
+  background-color: #ddd;
+  text-align: center;
+  height: auto;
+  flex-shrink: 0; /* Запрет уменьшения элемента */
+  border-radius: 20px;
+  border: 5px solid var(--Linear, hsl(138, 73%, 50%));
+background: #FFF;
+
+}
+
+.slide6 {
+  width: 40%; /* Устанавливаем ширину карточки */
+  margin-right: 15px; /* Пространство между карточками */
+  background-color: #ddd;
+  text-align: center;
+  height: auto;
+  flex-shrink: 0; /* Запрет уменьшения элемента */
+  border-radius: 20px;
+  border: 5px solid var(--Linear, #ff21c7);
+background: #FFF;
+
+}
+
+
+
+
+button {
+  margin: 5px;
+}
+
+.slider__row{
+  display: flex;
+ justify-content: space-between;
+  align-items: center;
+}
+
+.slider__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+ 
+}
+.slider__icon a img {
+  position: relative;
+  top: 40px;
+  right: 40px;
+}
+
+.slider__text {
+  padding: 0 0 0 32px;
+}
+.slider__text h6 {
+  color: #243976;
+text-align: center;
+font-family: "ALSSchlangesans-Bold";
+font-size: 26px;
+font-style: normal;
+font-weight: 400;
+
+}
+
+.slider__text p {
+  color: #243976;
+text-align: center;
+font-family: "Gotham Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position: relative;
+  bottom: 50px;
+}
+
+
+.slider__text a {
+  
+  text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: "Gotham Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+
+text-decoration-line: underline;
+color: rgb(60, 137, 232);
+  position: relative;
+  bottom: 50px;
+}
+
+.slider__right p {
+  color: #243976;
+  text-align: start;
+font-family: "Gotham Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+
+max-width: 337px;
+}
+.slider__btn-p {
+  background: transparent;
+  border: none;
+  width: 69px;
+  cursor: pointer;
+}
+
+
+.slider__btn-n {
+  background: transparent;
+  border: none;
+  width: 69px;
+}
+
+.slider__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+}
