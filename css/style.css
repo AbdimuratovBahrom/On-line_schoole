@@ -1582,6 +1582,132 @@ button {
 
 
 
+.accordion-button:not(.collapsed) {
+  color: var(--bs-white);
+  background-color: var(--color2);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+
+.accordition {
+  padding: 80px 0;
+  background: #FFF;
+}
+
+
+.accordion-button:not(.collapsed) {
+  color: #243976;
+  font-family: 'ALSSchlangesans-Bold';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 103.2%;
+  padding-right: 20px;
+  background: #EFF2FD;
+}
+
+.accordion-button {
+  color: #243976;
+  font-family: 'ALSSchlangesans-Bold';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 103.2%;
+  background: #EFF2FD;
+  border-radius: 20px;
+  max-width: 1180px;
+
+}
+
+.accordion-body {
+
+  height: 875px;
+  color: #243976;
+  text-align: start;
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  border: none;
+  overflow: auto;
+}
+
+.accordion-body span {
+
+  height: 875px;
+  color: #243976;
+  text-align: start;
+  font-family: "Gotham Pro";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  border: none;
+
+}
+
+.accordion-item {
+  background: #EFF2FD;
+  border-radius: 20px;
+  margin: 20px auto;
+  box-shadow: 0px 5px 0px 2px #cbcdd0;
+}
+
+.accordion-collapse {
+  background: #EFF2FD;
+  border: none;
+}
+
+.accordion-item::before {
+  background: #EFF2FD;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url(./image/btn_plus.png);
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(./image/btn_plus.png);
+  transform: rotate(135deg);
+}
+
+.accordion-button:focus {
+  z-index: 3;
+
+  box-shadow: 0 0 0 0.25rem #EFF2FD;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1880px) {
   .main__block {
