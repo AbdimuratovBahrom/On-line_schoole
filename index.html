@@ -15,16 +15,16 @@
 </head>
 
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <div class="container">
 
       <div class="logo__header">
-        <a href="#!" class="logo">
+        <a href="#header" class="logo">
           <img class="logo__img" src="./css/image/logo.svg" alt="Логотип">
         </a>
         <div class="nav__tel-btn">
-          <a href="tel:+00000000000">8 (800) 300-37-91</a>
-          <button>Записаться на урок</button>
+          <div class="tel__header"><a href="tel:+8003003791">8 (800) 300-37-91</a></div>
+          <div class="for__form"><a href="#form__main">Записаться на урок</a></div>
         </div>
         <button class="header__burger-btn" id="burger">
           <span></span><span></span><span></span>
@@ -42,27 +42,27 @@
           <div class="menu__row">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#">
+                <a class="menu__link" href="#whom__top">
                   Для кого
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">
+                <a class="menu__link" href="#lessons__big">
                   Как проходят уроки
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">
+                <a class="menu__link" href="#midle__title">
                   Преимущества
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">
+                <a class="menu__link" href="#price__block">
                   Цены
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">
+                <a class="menu__link" href="#footer__main">
                   Контакты
                 </a>
               </li>
@@ -102,7 +102,7 @@
               <span>Семейное образование с нами - это эффективно! </span>
             </p>
             <div class="social__column">
-              <div class="social__btn"><button>Записаться на урок</button></div>
+              <div class="social__btn"><a href="#form__main">Записаться на урок</a></div>
               <div class="social__row">
                 <div class="social__row-p">
                   <p>или написать: </p>
@@ -120,7 +120,7 @@
   </section>
   <section class="whom">
     <div class="container">
-      <div class="whom__top">
+      <div id="whom__top" class="whom__top">
         <div class="whom__h2">
           <h2>Кому подходит онлайн образование?</h2>
         </div>
@@ -173,7 +173,7 @@
           <p>Не знаете подойдет ли вашему ребенку обучение онлайн? Попробуйте первый месяц со скидкой 50%!</p>
         </div>
         <div class="first__btn-social">
-          <div class="fir_button"><a href="#!"><button>Записаться на урок</button></a></div>
+          <div class="fir_button"><a href="#form__main">Записаться на урок</a></div>
           <div class="fir__social">
             <p>или написать: </p>
             <a href="#!"><img src="./css/image/telegramm.svg" alt="Telegram"></a>
@@ -186,7 +186,7 @@
 
   <section class="lessons">
     <div class="container">
-      <div class="lessons__big">
+      <div id="lessons__big" class="lessons__big">
         <div class="lessons__title">
           <h2>Как проходят уроки?</h2>
         </div>
@@ -285,15 +285,14 @@
               </div>
 
               <div class="likes__btn-social">
-                <button>
-                  Записаться на урок
-                </button>
-                <div class="likes__social-row">
-                  <p>или написать: </p>
-                  <a href="#!"><img src="./css/image/telegramm.svg" alt=""></a>
-                  <a href="#!"><img src="./css/image/watsapp.svg" alt=""></a>
-                </div>
+                <a href="#form__main">Записаться на урок</a>
               </div>
+              <div class="likes__social-row">
+                <p>или написать: </p>
+                <a href="#!"><img src="./css/image/telegramm.svg" alt=""></a>
+                <a href="#!"><img src="./css/image/watsapp.svg" alt=""></a>
+              </div>
+
             </div>
             <likes__main-img>
               <img src="./css/image/likes.png" alt="">
@@ -483,7 +482,7 @@
 
   <section class="midle">
     <div class="container">
-      <div class="midle__title">
+      <div id="midle__title" class="midle__title">
         <h2>Онлайн школа <br>
           среднего образования это -</h2>
       </div>
@@ -568,7 +567,7 @@
             <p>Не знаете подойдет ли вашему ребенку обучение онлайн? Попробуйте первый месяц со скидкой 50%!</p>
           </div>
           <div class="first__btn-social">
-            <div class="fir_button"><a href="#!"><button>Записаться на урок</button></a></div>
+            <div class="fir_button"><a href="#form__main">Записаться на урок</a></div>
             <div class="fir__social">
               <p>или написать: </p>
               <a href="#!"><img src="./css/image/telegramm.svg" alt="Telegram"></a>
@@ -586,7 +585,7 @@
     <div class="price__h2">
       <h2>Сколько стоит обучение в онлайн школе?</h2>
     </div>
-    <div class="price__block">
+    <div id="price__block" class="price__block">
 
       <div class="content__box">
         <div class="price__case">
@@ -1371,7 +1370,130 @@
     </div>
   </section>
 
+  <section class="form">
+    <div class="container">
+      <div id="form__main" class="form__main">
+        <div class="form__box">
+          <form action="">
+            <div class="classroom"><img src="./css/image/Placeholder1.svg" alt=""> <input type="text" name="classroom"
+                placeholder="Класс" required></div>
 
+            <div class="persan"><img src="./css/image/Placeholder2.svg" alt=""> <input type="text" name="Your Last name"
+                placeholder="Имя родителя" required></div>
+
+            <div class="perants__phone">
+              <img src="./css/image/Placeholder3.svg" alt=""> <input type="tel" name="telphone"
+                placeholder="Телефон родителя"
+                pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})" maxlength="13"
+                title="14 digits code" required />
+            </div>
+
+          </form>
+
+
+          <div class="form__btn">
+            <button>Оставить заявку</button>
+          </div>
+
+          <div class="form__p">
+            <p>Нажимая кнопку, вы даете согласие на обработку своих персональных данных</p>
+          </div>
+        </div>
+
+        <div class="form__right">
+          <div class="form__h">
+            <h2>Все еще <span>сомневаетесь?</span></h2>
+            <p>Всегда страшно переходить на что-то новое и неизведанное, потому мы предоставляем нашим клиентам
+              возможность попробовать обучаться первую неделю абсолютно бесплатно.</p>
+          </div>
+          <div class="form__img">
+            <img src="./css/image/form__img2.png" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+
+      <div id="footer__main" class="footer__main">
+        <div class="footer__links">
+          <div class="footer__logo">
+            <div class="ft__logo">
+              <a href="#header"><img src="./css/image/logo.svg" alt=""></a>
+
+            </div>
+          </div>
+
+          <div class="footer__classes">
+            <h6>Классы</h6>
+            <ul>
+              <a href="#!">
+                <li>1-4 класс</li>
+              </a>
+              <a href="#!">
+                <li>5-8 класс</li>
+              </a>
+              <a href="#!">
+                <li>9-11 класс</li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="footer__doc">
+            <h6>Документы</h6>
+
+            <div class="ft__doc-row">
+              <a href="#!"><img src="./css/image/doc.svg" alt="Document"></a>
+              <a href="#!">Лицензия</a>
+            </div>
+
+          </div>
+
+          <div class="footer__socials">
+            <h6>Соцсети</h6>
+            <div class="ft__soc-icons">
+              <a href="#!"><img src="./css/image/telegramm.svg" alt="Telegram"></a>
+              <a href="#!"><img src="./css/image/youtube.svg" alt="Youtube"></a>
+              <a href="#!"><img src="./css/image/VK.png" alt="VK"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__contact">
+          <div class="footer__location">
+            <a href="#!">
+              <img src="./css/image/icon_location.svg" alt="location">
+            </a>
+            <a href="#!">
+              <p>г. Дмитров <br>
+                ул Московская, дом 23 </p>
+            </a>
+          </div>
+
+          <div class="footer__tel">
+            <a href="#!"><img src="./css/image/tel.svg" alt=""></a>
+            <a href="tel:+8003003791">
+              <p>8 (800) 300-37-91</p>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="ft__p"><a href="#!">Соглашение о конфиденциальности <br>
+          ООО «Школа Будущего Онлайн» <br>
+          Российская Федерация, 141804, Московская обл., <br>
+          г. Дмитров, ул Московская, дом 23 <br>
+          Возрастной рейтинг 6+</a>
+      </div>
+    </div>
+
+
+    </div>
+  </footer>
 
 
 
