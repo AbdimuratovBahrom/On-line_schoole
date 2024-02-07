@@ -2055,7 +2055,11 @@ footer {
   left: 3px;
 }
 
-
+.ft__p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .ft__p a {
   font-family: "Gotham Pro";
@@ -2082,6 +2086,34 @@ footer {
   left: 3px;
 }
 
+.footer__botton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__btn {
+    
+  font-size: 60px;
+  font-weight: 400;
+  color: rgb(32, 35, 33);
+  display: none;
+  position: fixed;
+  bottom: 15%;
+  right: 6%;
+  height: 70px;
+  width: 70px !important;
+  background: #8ba2d7;
+  padding: 30px;
+  border-radius: 50%;
+  scroll-behavior: smooth;
+}
+
+.footer__btn.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 

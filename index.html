@@ -9,8 +9,9 @@
   <link rel="icon" href="./css/image/girlboock.png">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/aos.css">
   <link rel="stylesheet" href="./css/style.css">
-
+  <script src="./js/aos.js"></script>
   <script defer src="./js/main.js"></script>
 </head>
 
@@ -38,7 +39,7 @@
           <img src="./css/image/line.png" alt="">
         </div>
 
-        <nav class="menu">
+        <nav<div data-aos="fade-down" data-aos-duration="2000" class="menu">
           <div class="menu__row">
             <ul class="menu__list">
               <li class="menu__item">
@@ -75,7 +76,7 @@
 
           </div>
 
-        </nav>
+          </nav>
       </div>
     </div>
   </header>
@@ -88,13 +89,13 @@
             <button>5-8 классы</button>
             <button>9-11 классы</button>
           </div>
-          <div class="main__h1">
+          <div data-aos="fade-right" class="main__h1">
             <h1>Настоящая школа</h1>
           </div>
         </div>
         <div class="main__box">
 
-          <div class="main__social">
+          <div data-aos="fade-right" class="main__social">
             <h1>у вас дома!</h1>
 
             <p>Мы даем детям реальные знания, потому наши классы не превышают 10 человек. А интерактивность и
@@ -112,7 +113,7 @@
               </div>
             </div>
           </div>
-          <div class="main__image"><img src="./css/image/main.png" alt=""></div>
+          <div data-aos="fade-left" class="main__image"><img src="./css/image/main.png" alt=""></div>
 
         </div>
       </div>
@@ -162,7 +163,7 @@
   </section>
   <section class="first__month">
     <div class="container">
-      <div class="first__month-row">
+      <div data-aos="zoom-in" data-aos-duration="3000" class="first__month-row">
         <div class="fir__m-img">
           <img src="./css/image/girlboock.png" alt="">
         </div>
@@ -1483,22 +1484,27 @@
         </div>
       </div>
 
+
+
       <div class="ft__p"><a href="#!">Соглашение о конфиденциальности <br>
           ООО «Школа Будущего Онлайн» <br>
           Российская Федерация, 141804, Московская обл., <br>
           г. Дмитров, ул Московская, дом 23 <br>
           Возрастной рейтинг 6+</a>
       </div>
+      <a class="footer__btn" href="#header">&#8679</a>
     </div>
-
 
     </div>
   </footer>
+
+  <script>AOS.init();</script>
 
 
 
   <script src="./js/slider.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/scroll.js"></script>
 </body>
 
 </html>
